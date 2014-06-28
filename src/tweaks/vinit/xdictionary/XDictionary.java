@@ -31,10 +31,8 @@ public class XDictionary implements IXposedHookLoadPackage {
 	StringBuffer url;
 	
 	public void handleLoadPackage(final LoadPackageParam lpparam) throws Throwable {
-		XposedBridge.log(lpparam.packageName);
 		
-		findAndHookMethod("android.widget.Editor.ActionPopupWindow", lpparam.classLoader, "initContentView", new XC_MethodHook() {
-			
+		findAndHookMethod("android.widget.Editor.ActionPopupWindow", lpparam.classLoader, "initContentView", new XC_MethodHook() {	
 			protected void afterHookedMethod(MethodHookParam param) 
 			{	
 				mEditor = XposedHelpers.getSurroundingThis(param.thisObject);
