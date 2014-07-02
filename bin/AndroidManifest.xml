@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="tweaks.vinit.xdictionary"
     android:versionCode="1"
@@ -9,12 +10,30 @@
 
     <application
         android:allowBackup="true"
+        android:hasCode="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" android:hasCode="false">
-        <meta-data android:name="xposedmodule" android:value="true"/>
-        <meta-data android:name="xposeddescription" android:value="App that searches for the definition of your selection on dictionary.com"/>
-        <meta-data android:name="xposedminversion" android:value="30"/>
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="tweaks.vinit.xdictionary.DictSettings"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="App that searches for the definition of your selection on dictionary.com" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="30" />
     </application>
 
 </manifest>
