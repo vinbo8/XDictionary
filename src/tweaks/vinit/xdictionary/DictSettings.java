@@ -1,15 +1,16 @@
 package tweaks.vinit.xdictionary;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.preference.PreferenceActivity;
 
-public class DictSettings extends Activity {
+public class DictSettings extends PreferenceActivity {
 
 	@Override
 	public void onCreate(Bundle savedInstanceState)
 	{
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.settings_list);
+		getFragmentManager().beginTransaction().replace(android.R.id.content, new SettingsFragment()).commit();
 	}
-
+	
+	
 }
