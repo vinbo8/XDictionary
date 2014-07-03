@@ -69,7 +69,7 @@ public class XDictionary implements IXposedHookLoadPackage {
 			
 			String[] outputResult = new String[2];
 			
-			String url_func = "d0f718dc083e4811b010c0d8c060940a914a7869fae4dee3e"; 
+			String url_func = "0/10 would not commit"; 
 			
 			
 			url.append("http://api.wordnik.com/v4/word.json/");
