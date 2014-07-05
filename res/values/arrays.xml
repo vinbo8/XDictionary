@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="syncFrequency">
+    <string-array name="displayMode">
         <item name="browser">Browser</item>
         <item name="popup">Popup</item>
         <item name="toast">Toast</item>

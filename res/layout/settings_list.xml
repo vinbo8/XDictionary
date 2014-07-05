@@ -2,14 +2,15 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
 
 
-        <ListPreference
-            android:key="prefSyncFrequency"
-            android:entries="@array/syncFrequency"
-            android:summary="ok"
-            android:entryValues="@array/syncFrequency"
-            android:title="ya" />
+        <tweaks.vinit.xdictionary.DemoListPreference
+            android:key="displayModeVal"
+            android:entries="@array/displayMode"
+            android:summary="Choose how you want to display the definition"
+            android:entryValues="@array/displayMode"
+            android:title="Display mode" />
  
 
-        
+        <tweaks.vinit.xdictionary.DonatePref
+            android:title="Donate" />
         
 </PreferenceScreen>

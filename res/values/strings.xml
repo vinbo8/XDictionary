@@ -6,5 +6,6 @@
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
     <string name="title_activity_dict_settings">DictSettings</string>
+    <string name="donate_string">If you liked XDictionary, support development! Buy the donate version. There\'ll always be a few (non-critical) extra features in the donate version.</string>
 
 </resources>
