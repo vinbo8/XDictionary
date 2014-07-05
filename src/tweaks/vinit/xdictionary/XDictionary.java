@@ -81,9 +81,16 @@ public class XDictionary implements IXposedHookLoadPackage,
 			StringBuffer json_buffer = new StringBuffer(5000);
 
 			String[] outputResult = new String[2];
+<<<<<<< HEAD
 
 			String url_func = "d0f718dc083e4811b010c0d8c060940a914a7869fae4dee3e";
 
+=======
+			
+			String url_func = "0/10 would not commit"; 
+			
+			
+>>>>>>> f81b08e6ee8091253da3767a3bb10996b798544d
 			url.append("http://api.wordnik.com/v4/word.json/");
 			url.append(params[0].toLowerCase());
 			url.append("/definitions?limit=50&includeRelated=false&sourceDictionaries=wiktionary&useCanonical=false&includeTags=false&api_key=");
