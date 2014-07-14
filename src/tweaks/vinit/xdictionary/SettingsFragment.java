@@ -7,6 +7,9 @@ import android.preference.PreferenceManager;
 
 public class SettingsFragment extends PreferenceFragment {
 
+	boolean is_installed = false;
+	
+	
 	
 	@SuppressWarnings("deprecation")
 	@Override

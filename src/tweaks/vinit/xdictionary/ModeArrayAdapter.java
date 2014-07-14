@@ -1,6 +1,7 @@
 package tweaks.vinit.xdictionary;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,34 +23,37 @@ public class ModeArrayAdapter extends ArrayAdapter<CharSequence> {
 
 		mInflater = LayoutInflater.from(context);
 		mEntries = objects;
-		// TODO Auto-generated constructor stub
 	}
 
-	/*public boolean areAllItemsEnabled() {
+	public boolean areAllItemsEnabled() {
 		return false;
-	}*/
+	}
 
-	/*public boolean isEnabled(int position) {
+	
+	public boolean isEnabled(int position) {
 		if (position >= 2)
 			return false;
 		else
 			return true;
-	}*/
-
+	}
+	
 	public View getView(int position, View convertView, ViewGroup parent) {
 		ViewHolder mViewHolder;
 		if (convertView == null) {
 			convertView = mInflater.inflate(
-					android.R.layout.select_dialog_singlechoice, null);
+					R.layout.choiceview, null);
 			mViewHolder = new ViewHolder();
 			mViewHolder.prefText = (TextView) convertView
 					.findViewById(android.R.id.text1);
 
 			convertView.setTag(mViewHolder);
 
-			/*if (position == 2) {
+			
+			if (position == 2) {
 				mViewHolder.prefText.setBackgroundColor(Color.GRAY);
-			}*/
+			}
+			
+			
 		} else {
 			mViewHolder = (ViewHolder) convertView.getTag();
 		}
